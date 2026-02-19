@@ -4,6 +4,8 @@
 
 **Goal:** Build a Git CLI plugin that captures AI prompts alongside the code changes they generate.
 
+**Privacy First:** All data is stored locally. No cloud sync, no public listing. Users control their prompt data completely.
+
 **Architecture:** Go-based CLI tool with JSON metadata storage. Wrapper around Git commands that captures prompts and diffs together.
 
 **Tech Stack:** Go 1.23+, go-git library, Cobra CLI framework, JSON storage
@@ -849,6 +851,8 @@ git commit -m "feat: add log command"
 
 ## Task 9: Export HTML Command
 
+**Privacy Note:** The export command creates a local HTML file only. No data is sent anywhere.
+
 **Files:**
 - Create: `internal/ui/html.go`
 - Create: `cmd/vibediff/export.go`
@@ -1053,6 +1057,13 @@ Git-native versioning layer for prompts and AI outputs.
 VibeDiff captures AI prompts alongside the code changes they generate.
 Never lose track of "how did I get this code?" again.
 
+## Privacy First
+
+- All data stored locally in `.vibediff/`
+- No cloud sync, no accounts, no tracking
+- Your prompts never leave your machine
+- Apache 2.0 licensed - fully open source
+
 ## Installation
 
 \`\`\`bash
@@ -1074,7 +1085,7 @@ vibediff show
 # See all vibe commits
 vibediff log
 
-# Share with teammates
+# Export to HTML for team sharing (local file only)
 vibediff export
 \`\`\`
 
@@ -1085,7 +1096,7 @@ vibediff export
 | `vibediff commit <prompt>` | Stage + commit with prompt attached |
 | `vibediff show [ref]` | Display prompt + diff for a commit |
 | `vibediff log` | Show all vibe commits |
-| `vibediff export [ref]` | Generate shareable HTML |
+| `vibediff export [ref]` | Generate shareable HTML file |
 
 ## License
 
@@ -1242,3 +1253,19 @@ git commit -m "chore: final polish and testing"
 - Push to GitHub
 - Create GitHub release
 - Announce on HackerNews / Reddit
+
+---
+
+## Privacy & Legal Notes
+
+**All data is local-only by design:**
+- `.vibediff/` folder is gitignored by default
+- Prompts are user-generated content (users own their prompts)
+- No cloud sync or public listing in MVP
+- Exported HTML files are controlled by the user
+
+**Future considerations (if adding cloud features):**
+- Add explicit opt-in for any sync
+- Clear terms of service
+- Option to self-host
+- Enterprise on-premise option
