@@ -1,3 +1,17 @@
-
 # Worktrees
 .worktrees/
+
+# VibeDiff local data
+.vibediff/
+
+# Build artifacts
+vibediff
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go specific
+*.test
+*.out
+go.work
