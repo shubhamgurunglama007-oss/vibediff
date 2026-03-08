@@ -58,7 +58,7 @@ if [ "$OS" = "windows" ]; then
     BINARY_NAME="vibediff.exe"
 fi
 
-DOWNLOAD_URL="https://github.com/vibediff/vibediff/releases/download/$VERSION/vibediff-${OS}-${ARCH}${EXT}"
+DOWNLOAD_URL="https://github.com/shubhamgurunglama007-oss/vibediff/releases/download/$VERSION/vibediff-${OS}-${ARCH}${EXT}"
 
 info "Downloading from $DOWNLOAD_URL"
 if command -v curl >/dev/null 2>&1; then

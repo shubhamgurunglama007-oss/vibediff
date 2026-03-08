@@ -3,8 +3,8 @@
 
 class Vibediff < Formula
   desc "Git-native versioning layer for prompts and AI outputs"
-  homepage "https://github.com/vibediff/vibediff"
-  url "https://github.com/vibediff/vibediff/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://github.com/shubhamgurunglama007-oss/vibediff"
+  url "https://github.com/shubhamgurunglama007-oss/vibediff/archive/refs/tags/v1.0.0.tar.gz"
   sha256 :no_check
   license "Apache-2.0"
 

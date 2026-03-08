@@ -1,4 +1,4 @@
-module github.com/vibediff/vibediff
+module github.com/shubhamgurunglama007-oss/vibediff
 
 go 1.25.6
 

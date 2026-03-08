@@ -2,9 +2,9 @@
 
 Git-native versioning layer for prompts and AI outputs.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/vibediff/vibediff)](https://goreportcard.com/report/github.com/vibediff/vibediff)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shubhamgurunglama007-oss/vibediff)](https://goreportcard.com/report/github.com/shubhamgurunglama007-oss/vibediff)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/vibediff/vibediff?style=social)](https://github.com/vibediff/vibediff)
+[![GitHub stars](https://img.shields.io/github/stars/shubhamgurunglama007-oss/vibediff?style=social)](https://github.com/shubhamgurunglama007-oss/vibediff)
 
 ## Git vs VibeDiff
 
@@ -32,10 +32,10 @@ Files: auth.go, auth_test.go, middleware.go
 
 ```bash
 # Install
-curl -sSL https://raw.githubusercontent.com/vibediff/vibediff/main/install.sh | sh
+curl -sSL https://raw.githubusercontent.com/shubhamgurunglama007-oss/vibediff/main/install.sh | sh
 
 # Or with Go
-go install github.com/vibediff/vibediff@latest
+go install github.com/shubhamgurunglama007-oss/vibediff@latest
 
 # Use with your AI workflow
 vibediff commit "Add user authentication"
@@ -70,7 +70,7 @@ curl -sSL https://raw.githubusercontent.com/vibediff/vibediff/main/install.sh | 
 ### Go install
 
 ```bash
-go install github.com/vibediff/vibediff@latest
+go install github.com/shubhamgurunglama007-oss/vibediff@latest
 ```
 
 ### Homebrew (macOS/Linux)
@@ -82,16 +82,16 @@ brew install vibediff
 
 ### Download binary
 
-Download from [GitHub Releases](https://github.com/vibediff/vibediff/releases):
+Download from [GitHub Releases](https://github.com/shubhamgurunglama007-oss/vibediff/releases):
 
 ```bash
 # Linux amd64
-curl -sSL https://github.com/vibediff/vibediff/releases/latest/download/vibediff-linux-amd64 -o vibediff
+curl -sSL https://github.com/shubhamgurunglama007-oss/vibediff/releases/latest/download/vibediff-linux-amd64 -o vibediff
 chmod +x vibediff
 sudo mv vibediff /usr/local/bin/
 
 # macOS (Apple Silicon)
-curl -sSL https://github.com/vibediff/vibediff/releases/latest/download/vibediff-darwin-arm64 -o vibediff
+curl -sSL https://github.com/shubhamgurunglama007-oss/vibediff/releases/latest/download/vibediff-darwin-arm64 -o vibediff
 chmod +x vibediff
 sudo mv vibediff /usr/local/bin/
 ```
@@ -99,7 +99,7 @@ sudo mv vibediff /usr/local/bin/
 ### Build from source
 
 ```bash
-git clone https://github.com/vibediff/vibediff.git
+git clone https://github.com/shubhamgurunglama007-oss/vibediff.git
 cd vibediff
 make build
 sudo make install

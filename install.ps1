@@ -35,7 +35,7 @@ $binDir = Join-Path $env:USERPROFILE "bin"
 New-Item -ItemType Directory -Force -Path $binDir | Out-Null
 
 # Download binary
-$downloadUrl = "https://github.com/vibediff/vibediff/releases/download/$version/vibediff-windows-$arch.exe"
+$downloadUrl = "https://github.com/shubhamgurunglama007-oss/vibediff/releases/download/$version/vibediff-windows-$arch.exe"
 $outputPath = Join-Path $binDir "vibediff.exe"
 
 Write-Info "Downloading from $downloadUrl"
